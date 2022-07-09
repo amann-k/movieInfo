@@ -1,0 +1,225 @@
+body, html
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.header{
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+
+    height: 100vh;
+    background: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%), url("assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+
+   
+}
+
+.header-content {
+    
+    color: white;
+    border: 4px ;
+    max-width: 600px;  
+    position: relative;
+}
+
+h1{
+    display: block;
+    font-size: 3.7084em;
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    text-align: center;
+    font-weight: bold;
+    line-height: 70px;
+
+    margin-top: 170px;
+}
+
+
+h2{
+    padding-left: 90px;
+    display: block;
+    font-size: 1.625em;
+    line-height: 10px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3{
+
+    display: block;
+    font-size: 2vh;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-left: 60px;
+        
+    
+}
+
+/*-----------top logo--------------*/
+/* .imgtop{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    
+
+} */
+.logo{
+    position: absolute; 
+    left: 10px;
+    top: 10px;
+}
+/* .logo toplogo{
+
+    top: 0px;
+    left: 0px;
+} */
+
+
+
+/*=----------sign-up---------------*/
+.Signup{
+
+    text-align: center;
+
+}
+input[type=email]{
+
+    margin-right: 0px;
+    font-size: 15px;
+    height: 60px;
+    width: 450px;
+    /* padding-left: 40% ;
+    padding-top: 25px;
+    padding-bottom: 10px; */
+    text-align: left;
+    box-sizing: border-box;
+    
+}
+
+button{
+
+    
+    /* padding-left: 8% ; */
+    font-size: 25px;
+    height:60px;
+    width: 200px;   
+    position: relative;
+    /* font-weight: bold; */
+    color: white;
+    background-color:#e50914;
+    text-align: center;   
+    cursor: pointer; 
+}
+::-webkit-input-placeholder {
+    text-align: left;
+  }
+
+.signin input[type=button]{
+    font-size: 20px;
+    height:60px;
+    width: 100px;   
+    position: relative;
+    /* font-weight: bold; */
+    color: white;
+    background-color:#e50914;
+    text-align: center;   
+    cursor: pointer; 
+
+}
+
+
+/*---------------form-------------------*/
+
+*{box-sizing: border-box;}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: absolute;
+  bottom: 200px;
+  right: 110px;
+  z-index: 9;
+  
+  max-width: 350px;
+  max-height: 700px;
+ 
+
+  
+
+}
+.form-popup h1{
+
+    font-size: 30px;
+    
+    
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 350px;
+  max-height: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  background-color: rgb(27, 25, 25);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #d3d3d3;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #e50914;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }

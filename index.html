@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0 "/>
+        <link rel="stylesheet" href="./style1.css"/>
+        <title>Netflix India</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <h1 class="main-heading">
+                    Unlimited movies, TV shows and more.
+                </h1>
+                <h2>Watch anywhere. Cancel anytime.</h2>
+                <h3 >Ready to watch? Enter your email to create or restart your membership.</h3>
+            
+                <div class="Signup">
+                    
+                    
+                    <button class="open-button" onclick="openForm()">Get Started :)</button> 
+
+             
+                 <!----------------login form------------------>
+            <div class="form-popup" id="myForm">
+                <form action="search.html" class="form-container">
+                  <h1>Let's get started !</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required id="email_f ">
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required id="psw_f">
+                  
+                  <button type="submit" class="btn">Login</button>
+                  <!-- <a href="search.html" class="button"  type="submit" >Login</a> -->
+                  <button type="button" class="btn cancel" onclick="closeForm()">Go back</button>
+                </form>
+              </div>
+              
+                    
+                    
+                    <!-- <br><br>
+                    <div class = "signin">
+                    <a href=""></a><p>Don't have an account ?</p>  <br>
+                    <input type="button" value="Sign Up"> -->
+
+                    
+                </div>
+            </div>
+
+
+                
+                
+            </div>
+            <!-- <div class="imgtop"> -->
+            <img src="assets/toplogo.png" class="logo"/>
+            <!-- </div> -->
+
+
+
+            <!----------------firebase---------------->
+            
+            <script type="module">
+                // Import the functions you need from the SDKs you need
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+                // TODO: Add SDKs for Firebase products that you want to use
+                // https://firebase.google.com/docs/web/setup#available-libraries
+              
+                // Your web app's Firebase configuration
+                const firebaseConfig = {
+                  apiKey: "AIzaSyBNMPAURjGVH5O1PFbWE9ApXj2ZS5HVE6M",
+                  authDomain: "web-auth-ecb9c.firebaseapp.com",
+                  projectId: "web-auth-ecb9c",
+                  storageBucket: "web-auth-ecb9c.appspot.com",
+                  messagingSenderId: "617419591271",
+                  appId: "1:617419591271:web:cda0ff8479271c04d5cec2"
+                };
+              
+                // Initialize Firebase
+                const app = initializeApp(firebaseConfig);
+              </script>
+
+              
+
+            
+              
+
+        </header>
+        <script src="firebase.js"></script>
+    </body>
+
+    
+</html>
